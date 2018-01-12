@@ -1,0 +1,12 @@
+.image-cropper {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+}
