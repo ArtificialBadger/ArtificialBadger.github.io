@@ -1,19 +1,9 @@
 <header class="inner" id="extended_header">
-  <table class="name_block">
-    <tr>
-      <td rowspan="2">
-        <div class="image-cropper">
-          <img src="/images/IsaacZais.jpg" alt="Isaac Lee Zais" class="rounded" />
-        </div>
-      </td>
-      <td>
-        <h1 id="project_title">Isaac Lee Zais</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h2 id="project_tagline">Software Engineer | Hobbyist Cryptographer | Dungeon Master </h2>
-      </td>
-    </tr>
-  </table>
+  <div class="grid_container">
+    <div class="grid_item_image image-cropper">
+      <img src="/images/IsaacZais.jpg" alt="Isaac Lee Zais" class="rounded" />
+    </div>
+    <h1 class="grid_item_header" id="project_title">{{site.title}}</h1>
+    <h2 class="grid_item_subheader" id="project_tagline">{{site.subtitle}}</h2>
+  </div>
 </header>

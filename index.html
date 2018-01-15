@@ -2,7 +2,22 @@
 layout : default
 ---
 
+<h1>Employment History</h1>
 
-<p>
-    This is a thing!
-</p>
+{% for job in site.data.employments %}
+  
+  <div class="employment_grid">
+    <div class="employment_grid_company_name">
+      <h3 class="employment_line">
+        {{ job.company_name }} - {{ job.title }}
+      </h3>
+    </div>
+    <div class="employment_grid_employment_span">
+      <h3 class="employment_line">
+        {{ job.span }}
+      </h3>
+    </div>
+    <hr/>
+  </div>
+
+{% endfor %}

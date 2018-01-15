@@ -1,0 +1,17 @@
+[
+    {
+        "company_name": "MCIS",
+        "title": "Programmer/Analyst",
+        "span" : "06/2015 - present",
+    },
+    {
+        "company_name": "MCIS",
+        "title": "Programmer/Analyst Intern",
+        "span" : "05/2014 - 09/2014",
+    },
+    {
+        "company_name": "Menards",
+        "title": "Software Developer Intern",
+        "span" : "12/2012 - 01/2014",
+    }
+]
