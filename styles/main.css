@@ -9,4 +9,7 @@
 img {
     display: inline;
     margin: 0 auto;
+    vertical-align: -webkit-baseline-middle;
+    padding: 0px;
+    border: 0px;
 }
