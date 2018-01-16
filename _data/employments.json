@@ -3,15 +3,33 @@
         "company_name": "MCIS",
         "title": "Programmer/Analyst",
         "span" : "06/2015 - present",
+        "responsibilities" : [
+            "Did some server stuff",
+            "A little client side stuff too",
+            "Lots of security stuff",
+            "Database stuff as well",
+        ]
     },
     {
         "company_name": "MCIS",
         "title": "Programmer/Analyst Intern",
         "span" : "05/2014 - 09/2014",
+        "responsibilities" : [
+            "Made an iOS mobile app",
+            "Made an Android mobile app",
+            "Made a mobile-friendly API",
+            "Tested, deployed, and gathered usage information",
+        ]
     },
     {
         "company_name": "Menards",
-        "title": "Software Developer Intern",
+        "title": "Mobile Development Intern",
         "span" : "12/2012 - 01/2014",
+        "responsibilities" : [
+            "Made a few Android enterprise mobile apps",
+            "Maintained and upgraded ",
+            "Lots of security stuff",
+            "Database stuff as well",
+        ]
     }
 ]
