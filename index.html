@@ -20,4 +20,36 @@ layout : default
   </div>
   <hr/>
 
+  <ul>
+    {% for responsibility in job.responsibilities %}
+      <li>
+        {{responsibility}}
+      </li>
+    {% endfor %}
+  </ul>
+
 {% endfor %}
+
+<h1>
+  Education
+</h1>
+
+<div>
+{% for education in site.data.education %}
+  <h3>
+    {{ education.institution_name }}
+  </h3>
+  <hr/>
+  <div>
+    <p>
+      {{ education.degree_earned_date}}
+    </p>
+    <p>
+      {{education.degree_earned}}
+    </p>
+    <p>
+      {{education.major_name}}
+    </p>
+  </div>
+{% endfor %}
+</div>
