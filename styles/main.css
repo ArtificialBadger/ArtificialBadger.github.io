@@ -2,26 +2,26 @@
     max-width: 800px;
 }
 
-.employment_line {
-    margin: 10px 0;
+.subtitle_line {
+    margin: 10px 0 0px;
 }
 
-.employment_grid {
+.subtitle_grid {
     display: grid;
     grid-template-areas:
-        "position_title employment_span";
+        "left_subtitle right_subtitle";
     grid-template-columns: 2fr 1fr;
     grid-gap: 0px 10px;
 }
 
-.employment_grid_position_title {
-    grid-area: position_title;
+.subtitle_grid_left_subtitle {
+    grid-area: left_subtitle;
     justify-self: start;
     align-self: start;
 }
 
-.employment_grid_employment_span {
-    grid-area: employment_span;
+.subtitle_grid_right_subtitle {
+    grid-area: right_subtitle;
     justify-self: end;
     align-self: start;
 }

@@ -4,10 +4,11 @@
         "title": "Programmer/Analyst",
         "span" : "06/2015 - present",
         "responsibilities" : [
-            "Did some server stuff",
-            "A little client side stuff too",
-            "Lots of security stuff",
-            "Database stuff as well",
+            "Developed a custom Framework and Platform using C#.Net for use in a cutting-edge EHR.",
+            "Created an admin portal for EHR governance using WPF.",
+            "Maintained and upgraded security measures for a variety of apps, including integration of SSO via AD Federated Identity using OAuth 2 and OpenID Connect.",
+            "Produced an API for healthcare applications, using ASP.NET Web API and ASP.Net Core MVC.",
+            "Implemented enterprise level messaging and eventing systems implemented via Azure web apps.",
         ]
     },
     {
@@ -15,10 +16,10 @@
         "title": "Programmer/Analyst Intern",
         "span" : "05/2014 - 09/2014",
         "responsibilities" : [
-            "Made an iOS mobile app",
-            "Made an Android mobile app",
-            "Made a mobile-friendly API",
-            "Tested, deployed, and gathered usage information",
+            "Created a cross platform Android/iOS app for clinic patients using Xamarin.",
+            "Designed back-end API hosted on Microsoft Azure.",
+            "Contributed to a DDD focus design.",
+            "Produced a backing data store using Microsoft SQL Server hosted on Azure.",
         ]
     },
     {
@@ -26,10 +27,9 @@
         "title": "Mobile Development Intern",
         "span" : "12/2012 - 01/2014",
         "responsibilities" : [
-            "Made a few Android enterprise mobile apps",
-            "Maintained and upgraded ",
-            "Lots of security stuff",
-            "Database stuff as well",
+            "Developed the publically availible Menards application for both iOS and Android.",
+            "Created multiple enterprise level Android applications used by store employees.",
+            "Participated in all phases of development including designing, testing, deployment, and analytics gathering.",
         ]
     }
 ]

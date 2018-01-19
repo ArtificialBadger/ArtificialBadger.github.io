@@ -6,14 +6,14 @@ layout : default
 
 {% for job in site.data.employments %}
   
-  <div class="employment_grid">
-    <div class="employment_grid_company_name">
-      <h3 class="employment_line">
+  <div class="subtitle_grid">
+    <div class="subtitle_grid_left_subtitle">
+      <h3 class="subtitle_line">
         {{ job.company_name }} - {{ job.title }}
       </h3>
     </div>
-    <div class="employment_grid_employment_span">
-      <h3 class="employment_line">
+    <div class="subtitle_grid_right_subtitle">
+      <h3 class="subtitle_line">
         {{ job.span }}
       </h3>
     </div>
@@ -36,20 +36,24 @@ layout : default
 
 <div>
 {% for education in site.data.education %}
-  <h3>
-    {{ education.institution_name }}
-  </h3>
+  <div class="subtitle_grid">
+    <div class="subtitle_grid_left_subtitle">
+      <h3 class="subtitle_line">
+        {{ education.institution_name }}
+      </h3>
+    </div>
+    <div class="subtitle_grid_right_subtitle">
+      <h3 class="subtitle_line">
+        Graduated {{ education.degree_earned_date}}
+      </h3>
+    </div>
+  </div>
   <hr/>
+  
   <div>
-    <p>
-      {{ education.degree_earned_date}}
-    </p>
-    <p>
-      {{education.degree_earned}}
-    </p>
-    <p>
-      {{education.major_name}}
-    </p>
+    <h5>
+      {{education.degree_earned}} - {{education.major_name}}
+    </h5>
   </div>
 {% endfor %}
 </div>
