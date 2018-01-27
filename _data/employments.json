@@ -4,11 +4,11 @@
         "title": "Programmer/Analyst",
         "span" : "06/2015 - present",
         "responsibilities" : [
-            "Developed a custom Framework and Platform using C#.Net for use in a cutting-edge EHR.",
-            "Created an admin portal for EHR governance using WPF.",
-            "Maintained and upgraded security measures for a variety of apps, including integration of SSO via AD Federated Identity using OAuth 2 and OpenID Connect.",
-            "Produced an API for healthcare applications, using ASP.NET Web API and ASP.Net Core MVC.",
-            "Implemented enterprise level messaging and eventing systems implemented via Azure web apps.",
+            "Developing a custom Framework and Platform using C#.Net for use in a cutting-edge EHR.",
+            "Creating an admin portal for EHR governance using WPF.",
+            "Designing, maintaining and improving security measures for a variety of enterprise applications, including integration of SSO via AD Federated Identity using OAuth 2 and OpenID Connect.",
+            "Producing an API for healthcare applications, using ASP.NET Web API and ASP.Net Core MVC.",
+            "Implementing enterprise level messaging and eventing systems via Microsoft Azure.",
         ]
     },
     {
@@ -27,7 +27,7 @@
         "title": "Mobile Development Intern",
         "span" : "12/2012 - 01/2014",
         "responsibilities" : [
-            "Developed the publically availible Menards application for both iOS and Android.",
+            "Developed the publically available Menards application for both iOS and Android.",
             "Created multiple enterprise level Android applications used by store employees.",
             "Participated in all phases of development including designing, testing, deployment, and analytics gathering.",
         ]
