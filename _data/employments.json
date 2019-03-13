@@ -1,14 +1,25 @@
 [
     {
+        "company_name": "C.H. Robinson",
+        "title": "Software Engineer II",
+        "span" : "04/2018 - present",
+        "responsibilities" : [
+            "Developing and maintaining an industry leading Global Forwarding application.",
+            "Creating multiple websites using cutting edge front end technologies like React and Redux.",
+            "Full stack designing and maintaining of a 3 tiered, microservice based application.",
+            "Leading a study group focused on application performance, software design, technical skill, and software craftsmanship.",
+        ]
+    },
+    {
         "company_name": "MCIS",
         "title": "Programmer/Analyst",
         "span" : "06/2015 - present",
         "responsibilities" : [
-            "Developing a custom Framework and Platform using C#.Net for use in a cutting-edge EHR.",
-            "Creating an admin portal for EHR governance using WPF.",
-            "Designing, maintaining and improving security measures for a variety of enterprise applications, including integration of SSO via AD Federated Identity using OAuth 2 and OpenID Connect.",
-            "Producing an API for healthcare applications, using ASP.NET Web API and ASP.Net Core MVC.",
-            "Implementing enterprise level messaging and eventing systems via Microsoft Azure.",
+            "Developed a custom framework and platform using C#.Net for use in a cutting-edge EHR.",
+            "Created an admin portal for EHR governance using WPF.",
+            "Designed, maintained and improved security measures for a variety of enterprise applications, including integration of SSO via AD Federated Identity using OAuth 2 and OpenID Connect.",
+            "Produced an API for healthcare applications, using ASP.NET Web API and ASP.Net Core MVC.",
+            "Implemented an enterprise level messaging and eventing systems via Microsoft Azure.",
         ]
     },
     {
