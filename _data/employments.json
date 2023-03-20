@@ -1,13 +1,23 @@
 [
     {
+        "company_name": "Microsoft",
+        "title": "Senior Software Engineer",
+        "span" : "06/2020 - present",
+        "responsibilities" : [
+            "Led feature teams for the creation of the new offerings of Microsoft Managed Desktop and Windows Autopatch.",
+            "Developed and maintained many full-stack features writtin in C# and hosted in Azure.",
+            "Led Security and Microservice v-teams to maintain and align security, architecture, and availability."
+       ]
+    },
+    {
         "company_name": "C.H. Robinson",
         "title": "Software Engineer II",
-        "span" : "04/2018 - present",
+        "span" : "04/2018 - 05/2020",
         "responsibilities" : [
-            "Developing and maintaining an industry leading Global Forwarding application.",
-            "Creating multiple websites using cutting edge front end technologies like React and Redux.",
-            "Full stack designing and maintaining of a 3 tiered, microservice based application.",
-            "Leading a study group focused on application performance, software design, technical skill, and software craftsmanship.",
+            "Developed and maintained an industry leading Global Forwarding application.",
+            "Created multiple websites using cutting edge front end technologies like React and Redux.",
+            "Full stack design and maintainance of a 3 tiered, microservice based application.",
+            "Led a study group focused on application performance, software design, technical skill, and software craftsmanship.",
         ]
     },
     {
