@@ -33,7 +33,7 @@
     grid-template-areas: 
         "image header"
         "image subheader";
-    grid-gap: 10px 10px;
+    grid-gap: 4px 10px;
 }
 
 .grid_item_image {
@@ -124,12 +124,12 @@ hr {
 #project_title {
     justify-self: start;
     line-height: 1.15;
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
 #project_tagline {
     justify-self: start;
-    line-height: 1.25;
+    line-height: 1.15;
 }
 
 .content_block {
@@ -141,6 +141,8 @@ hr {
 .content_block summary {
     list-style: none;
     cursor: pointer;
+    display: flex;
+    align-items: flex-start;
 }
 
 .content_block summary::-webkit-details-marker {
@@ -150,10 +152,16 @@ hr {
 .content_block summary::before {
     content: "▸";
     margin-right: 8px;
+    line-height: 1.15;
+    flex: 0 0 auto;
 }
 
 .content_block[open] summary::before {
     content: "▾";
+}
+
+.content_block summary > * {
+    flex: 1 1 auto;
 }
 
 .content_block ul,
