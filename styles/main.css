@@ -28,7 +28,7 @@
 
 .grid_container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto minmax(0, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas: 
         "image header"
@@ -46,7 +46,7 @@
     
 .grid_item_header {
     justify-self: stretch;
-    align-self: end;
+    align-self: start;
     grid-area: header;    
     grid-column-start: 2;
     grid-column-end: 3;

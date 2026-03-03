@@ -4,15 +4,7 @@
       <img src="/images/IsaacZais-132020.jpg" alt="Isaac Lee Zais" class="rounded" />
     </div>
     <h1 class="grid_item_header" id="project_title">{{site.title}}</h1>
-    <h2
-      class="grid_item_subheader"
-      id="project_tagline"
-      data-base-subtitle="Software Engineer"
-      data-second-subtitle="Hobbyist Cryptographer"
-      data-third-subtitle="Dungeon Master"
-    >
-      Software Engineer
-    </h2>
+    <h2 class="grid_item_subheader" id="project_tagline">Software Engineer</h2>
   </div>
 </header>
 
@@ -24,23 +16,21 @@
       return;
     }
 
-    const baseSubtitle = tagline.dataset.baseSubtitle;
-    const secondSubtitle = tagline.dataset.secondSubtitle;
-    const thirdSubtitle = tagline.dataset.thirdSubtitle;
+    const subtitles = [
+      "Software Engineer",
+      "Hobbyist Cryptographer",
+      "Dungeon Master",
+    ];
+
     let clickCount = 0;
 
     const updateSubtitle = () => {
-      if (clickCount >= 10) {
-        tagline.textContent = `${baseSubtitle} | ${secondSubtitle} | ${thirdSubtitle}`;
-        return;
-      }
+      const subtitleCount = Math.min(
+        subtitles.length,
+        Math.floor(clickCount / 5) + 1,
+      );
 
-      if (clickCount >= 5) {
-        tagline.textContent = `${baseSubtitle} | ${secondSubtitle}`;
-        return;
-      }
-
-      tagline.textContent = baseSubtitle;
+      tagline.textContent = subtitles.slice(0, subtitleCount).join(" | ");
     };
 
     tagline.addEventListener("click", () => {
