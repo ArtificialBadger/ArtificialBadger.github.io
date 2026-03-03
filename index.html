@@ -5,29 +5,30 @@ layout : default
 <h1>Employment History</h1>
 
 {% for job in site.data.employments %}
-  
-  <div class="subtitle_grid">
-    <div class="subtitle_grid_left_subtitle">
-      <h3 class="subtitle_line">
-        {{ job.company_name }} - {{ job.title }}
-      </h3>
-    </div>
-    <div class="subtitle_grid_right_subtitle">
-      <h3 class="subtitle_line">
-        {{ job.span }}
-      </h3>
-    </div>
-  </div>
-  <hr/>
+  <details class="content_block" {% if forloop.first %}open{% endif %}>
+    <summary>
+      <div class="subtitle_grid">
+        <div class="subtitle_grid_left_subtitle">
+          <h3 class="subtitle_line">
+            {{ job.company_name }} - {{ job.title }}
+          </h3>
+        </div>
+        <div class="subtitle_grid_right_subtitle">
+          <h3 class="subtitle_line">
+            {{ job.span }}
+          </h3>
+        </div>
+      </div>
+    </summary>
 
-  <ul>
-    {% for responsibility in job.responsibilities %}
-      <li>
-        {{responsibility}}
-      </li>
-    {% endfor %}
-  </ul>
-
+    <ul>
+      {% for responsibility in job.responsibilities %}
+        <li>
+          {{responsibility}}
+        </li>
+      {% endfor %}
+    </ul>
+  </details>
 {% endfor %}
 
 <h1>
@@ -36,24 +37,27 @@ layout : default
 
 <div>
 {% for education in site.data.education %}
-  <div class="subtitle_grid">
-    <div class="subtitle_grid_left_subtitle">
-      <h3 class="subtitle_line">
-        {{ education.institution_name }}
-      </h3>
+  <details class="content_block" {% if forloop.first %}open{% endif %}>
+    <summary>
+      <div class="subtitle_grid">
+        <div class="subtitle_grid_left_subtitle">
+          <h3 class="subtitle_line">
+            {{ education.institution_name }}
+          </h3>
+        </div>
+        <div class="subtitle_grid_right_subtitle">
+          <h3 class="subtitle_line">
+            Graduated {{ education.degree_earned_date}}
+          </h3>
+        </div>
+      </div>
+    </summary>
+
+    <div>
+      <h5>
+        {{education.degree_earned}} - {{education.major_name}}
+      </h5>
     </div>
-    <div class="subtitle_grid_right_subtitle">
-      <h3 class="subtitle_line">
-        Graduated {{ education.degree_earned_date}}
-      </h3>
-    </div>
-  </div>
-  <hr/>
-  
-  <div>
-    <h5>
-      {{education.degree_earned}} - {{education.major_name}}
-    </h5>
-  </div>
+  </details>
 {% endfor %}
 </div>
