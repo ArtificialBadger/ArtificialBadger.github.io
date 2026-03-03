@@ -4,6 +4,50 @@
       <img src="/images/IsaacZais-132020.jpg" alt="Isaac Lee Zais" class="rounded" />
     </div>
     <h1 class="grid_item_header" id="project_title">{{site.title}}</h1>
-    <h2 class="grid_item_subheader" id="project_tagline">{{site.subtitle}}</h2>
+    <h2
+      class="grid_item_subheader"
+      id="project_tagline"
+      data-base-subtitle="Software Engineer"
+      data-second-subtitle="Hobbyist Cryptographer"
+      data-third-subtitle="Dungeon Master"
+    >
+      Software Engineer
+    </h2>
   </div>
 </header>
+
+<script>
+  (() => {
+    const tagline = document.getElementById("project_tagline");
+
+    if (!tagline) {
+      return;
+    }
+
+    const baseSubtitle = tagline.dataset.baseSubtitle;
+    const secondSubtitle = tagline.dataset.secondSubtitle;
+    const thirdSubtitle = tagline.dataset.thirdSubtitle;
+    let clickCount = 0;
+
+    const updateSubtitle = () => {
+      if (clickCount >= 10) {
+        tagline.textContent = `${baseSubtitle} | ${secondSubtitle} | ${thirdSubtitle}`;
+        return;
+      }
+
+      if (clickCount >= 5) {
+        tagline.textContent = `${baseSubtitle} | ${secondSubtitle}`;
+        return;
+      }
+
+      tagline.textContent = baseSubtitle;
+    };
+
+    tagline.addEventListener("click", () => {
+      clickCount += 1;
+      updateSubtitle();
+    });
+
+    updateSubtitle();
+  })();
+</script>
