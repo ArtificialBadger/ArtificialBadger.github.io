@@ -135,6 +135,34 @@ hr {
     -webkit-user-select: none;
 }
 
+#project_tagline.tagline-threat {
+    color: #b30000;
+}
+
+#project_portrait.portrait-inverted {
+    filter: invert(1);
+}
+
+.grid_item_whisper {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    align-self: end;
+    margin: 0;
+    opacity: 0;
+    color: #770000;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+    text-shadow: none;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    user-select: none;
+}
+
+.grid_item_whisper.watching-text-visible {
+    opacity: 0.18;
+}
+
 .content_block {
     margin: 10px 0;
     border-bottom: 1px solid #aaaaaa;
@@ -222,6 +250,13 @@ hr {
     #project_tagline {
         justify-self: center;
         text-align: center;
+    }
+
+    .grid_item_whisper {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        margin-top: 4px;
     }
 
 }
