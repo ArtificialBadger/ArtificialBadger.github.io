@@ -130,6 +130,9 @@ hr {
 #project_tagline {
     justify-self: start;
     line-height: 1.15;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .content_block {
@@ -142,7 +145,7 @@ hr {
     list-style: none;
     cursor: pointer;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .content_block summary::-webkit-details-marker {
@@ -162,6 +165,10 @@ hr {
 
 .content_block summary > * {
     flex: 1 1 auto;
+}
+
+.content_block summary .subtitle_line {
+    margin: 0;
 }
 
 .content_block ul,
