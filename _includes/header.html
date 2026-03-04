@@ -1,10 +1,11 @@
 <header class="inner" id="extended_header">
   <div class="grid_container">
     <div class="grid_item_image image-cropper">
-      <img src="/images/IsaacZais-132020.jpg" alt="Isaac Lee Zais" class="rounded" />
+      <img src="/images/IsaacZais-132020.jpg" alt="Isaac Lee Zais" class="rounded" id="project_portrait" />
     </div>
     <h1 class="grid_item_header" id="project_title">{{site.title}}</h1>
     <h2 class="grid_item_subheader" id="project_tagline">Software Engineer</h2>
+    <p class="grid_item_whisper" id="watching_text" aria-hidden="true">Eye am watching</p>
   </div>
 </header>
 
@@ -37,6 +38,9 @@
       "It's not quite time yet",
     ];
 
+    const portrait = document.getElementById("project_portrait");
+    const watchingText = document.getElementById("watching_text");
+
     let clickCount = 0;
 
     const updateSubtitle = () => {
@@ -46,6 +50,17 @@
       );
 
       tagline.textContent = subtitles.slice(0, subtitleCount).join(" | ");
+
+      const hasReachedFinalSubtitle = subtitleCount === subtitles.length;
+      tagline.classList.toggle("tagline-threat", hasReachedFinalSubtitle);
+
+      if (portrait) {
+        portrait.classList.toggle("portrait-inverted", hasReachedFinalSubtitle);
+      }
+
+      if (watchingText) {
+        watchingText.classList.toggle("watching-text-visible", hasReachedFinalSubtitle);
+      }
     };
 
     tagline.addEventListener("click", () => {
